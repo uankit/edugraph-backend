@@ -9,8 +9,8 @@ embedding_model = SentenceTransformer("all-mpnet-base-v2")
 
 # Connect to Neo4j database
 NEO4J_URI = "bolt://localhost:7687"
-NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "edugraph@123"
+NEO4J_USER = ""
+NEO4J_PASSWORD = ""
 
 try:
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
